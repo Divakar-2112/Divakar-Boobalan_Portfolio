@@ -15,7 +15,7 @@
     <!-- Navbar -->
     <nav class="navbar">
       <div class="logo">
-        <h2>Divakar</h2>
+        <h2>Divakar Boobalan</h2>
       </div>
 
       <div class="nav-links" id="navLinks">
@@ -44,7 +44,7 @@
 
       <div class="btn-group">
         <a href="#contact" class="btn">Contact Me</a>
-        <a href="#" class="btn btn-secondary">Download CV</a>
+        <a href="#" class="btn -secondary">Download CV</a>
       </div>
 
       <div class="social-icons">
@@ -114,7 +114,7 @@
             Developed using Django with HTML, CSS, and JavaScript to create an
             interactive and user-friendly interface with backend integration.
           </p>
-          <a href="#">View Project</a>
+          <button class="btn"><a href="#">View Project</a></button>
         </div>
 
         <div class="project-card">
@@ -123,16 +123,15 @@
             Created using Flask with a focus on user-friendly interface and
             secure payment integration.
           </p>
-          <a href="#">View Project</a>
+          <button class="btn"><a href="#">View Project</a></button>
         </div>
-
         <div class="project-card">
           <h3>Bank Management System</h3>
           <p>
             A Flask-based web app for managing banking operations with MySQL for
             data storage.
           </p>
-          <a href="#">View Project</a>  
+          <button class="btn"><a href="#">View Project</a></button>
         </div>
       </div>
 
@@ -144,28 +143,32 @@
     <!-- Technical Skills Section -->
     <section class="technical-skills" id="skills">
       <h2>Technical Skills</h2>
-      <div class="technical">
-        <h3>Web Development Skills</h3>
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Python</li>
-        <li>Flask</li>
-        <li>Django</li>
-        <li>SQL</li>
-        <li>Git</li>
-      </ul>
-      </div>
-      <div class ="technical">
-        <h3>Other Skills</h3>
-        <ul>
-          <li>Problem Solving</li>
-          <li>Team Collaboration</li>
-          <li>Effective Communication</li>
-          <li>Time Management</li>
-          <li>Adaptability</li>
-        </ul>
+      <div class="all-technical">
+        <div class="technical">
+          <h3>Web Development Skills</h3>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Python</li>
+              <li>Flask</li>
+              <li>Django</li>
+              <li>SQL</li>
+              <li>Git & GitHub</li>
+              <li>REST APIs</li>
+              <li>WordPress</li>
+            </ul>
+        </div>
+        <div class ="technical">
+          <h3>Other Skills</h3>
+            <ul>
+              <li>Problem Solving</li>
+              <li>Team Collaboration</li>
+              <li>Effective Communication</li>
+              <li>Time Management</li>
+              <li>Adaptability</li>
+            </ul>
+        </div>
       </div>
     </section>
 
@@ -187,20 +190,20 @@
       <div class="contact-container">
         <div class="contact-send">
           <h2>Contact Form</h2>
-          <p style="color: green"></p>
 
-          <form method="POST" action="/contact">
+          <form action="https://docs.google.com/forms/d/e/1FAIpQLScpEFB7SwlBHW00acSmiHlQ-bCC_dcayTpEt0iKawyI2ESJ3A/formResponse" method="POST" target="_blank">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required />
+            <input type="text" id="name" name="entry.111111" required />
 
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required />
+            <input type="email" id="email" name="entry.222222" required />
 
             <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
+            <textarea id="message" name="entry.333333" rows="4" required></textarea>
 
             <input type="submit" value="Submit" />
           </form>
+
         </div>
 
         <div class="contact-info">
@@ -289,7 +292,7 @@
       </div>
     </footer>
 
-    <button id="backtotop" class=""><a href="#top" ><i class="fas fa-arrow-up"></i></a></button>
+    <button id="backtotop"><a href="#top"><i class="fas fa-arrow-up"></i></a></button>
 
     <!-- Mobile Menu Script -->
     <script>
@@ -301,24 +304,30 @@
         });
 
         // Back to Top Button
-        const backToTopBtn = document.getElementById('backtotop');
-        
-        window.addEventListener('scroll', () => {
-            if (window.pageYOffset > 300) {
-                backToTopBtn.classList.remove('opacity-0', 'invisible');
-                backToTopBtn.classList.add('opacity-100', 'visible');
-            } else {
-                backToTopBtn.classList.add('opacity-0', 'invisible');
-                backToTopBtn.classList.remove('opacity-100', 'visible');
-            }
-        });
-        
-        backToTopBtn.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
+
+        let backToTopBtn = document.getElementById('backtotop');
+
+// Show/hide button on scroll
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+        backToTopBtn.style.opacity = '1';
+        backToTopBtn.style.visibility = 'visible';
+    } else {
+        backToTopBtn.style.opacity = '0';
+        backToTopBtn.style.visibility = 'hidden';
+    }
+});
+
+// Smooth scroll to top on click
+backToTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+
+
+       
     </script>
   </body>
 </html>
