@@ -650,8 +650,8 @@ margin-bottom: 12px;
 }
 
 .tech-badge {
-font-size: 0.7rem;
-padding: 4px 8px;
+font-size: 0.9rem;
+padding: 8px 16px;
 border-radius: 999px;
 background: rgba(15, 23, 42, 0.9);
 border: 1px solid rgba(148, 163, 184, 0.4);
@@ -663,13 +663,11 @@ border-color var(--transition-fast), box-shadow var(--transition-fast);
 }
 
 .project-cards:hover .tech-badge {
-background: rgba(30, 64, 175, 0.9);
 border-color: rgba(129, 140, 248, 0.9);
-box-shadow: 0 14px 30px rgba(30, 64, 175, 0.7);
 }
 
 /* Badge colors */
-.badge-html {
+.badge-html  {
 border-color: rgba(248, 113, 113, 0.7);
 background: rgba(127, 29, 29, 0.6);
 }
@@ -794,10 +792,57 @@ margin-bottom: 14px;
   height: 50px;
 }
 
+.tech-icon{
+  width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    margin: 0 auto 1rem;
+    font-size: 2.5rem;
+    color: white;
+    transition: all 0.3s 
+ease;
+
+}
+
 h3 {
   margin-top: 10px;
   font-size: 18px;
 }
+.html{
+  background: linear-gradient(135deg, #e34f26, #f06529);
+}
+.css {
+    background: linear-gradient(135deg, #264de4, #2965f1);
+}
+.js {
+    background: linear-gradient(135deg, #f7df1e, #f0db4f);
+    color: #323330 !important;
+}
+.mysql {
+    background: linear-gradient(135deg, #4479a1, #00618a);
+}
+.python {
+    background: linear-gradient(135deg, #3776ab, #306998);
+}
+.flask {
+    background: linear-gradient(135deg, #000000, #2d2d2d);
+}
+.tailwind {
+    background: linear-gradient(135deg, #38b2ac, #319795);
+}
+.mongobd {
+    background: linear-gradient(135deg, #47a248, #3fa037);
+}
+.wordpress {
+    background: linear-gradient(135deg, #21759b, #1e6a8a);
+}
+.django {
+    background: linear-gradient(135deg, #092e20, #092e20);
+}
+
 
 
 /* Additional skills layout */
@@ -829,10 +874,13 @@ margin-bottom: 6px;
 .achivement-badge {
 display: inline-flex;
 align-items: center;
-gap: 6px;
-font-size: 0.8rem;
-padding: 6px 9px;
+gap: 0.75rem;
+font-size: 1.2rem;
+padding: 10px 18px;
 border-radius: 999px;
+font-weight: 600;
+margin-bottom: 10px;
+margin-right: 10px;
 border: 1px solid rgba(148, 163, 184, 0.5);
 background: rgba(15, 23, 42, 0.96);
 color: #e5e7eb;
@@ -848,7 +896,42 @@ font-size: 0.85rem;
 transform: translateY(-1px);
 border-color: rgba(129, 140, 248, 0.9);
 box-shadow: 0 12px 30px rgba(15, 23, 42, 0.95);
-background: linear-gradient(135deg, rgba(79, 70, 229, 0.8), rgba(14, 165, 233, 0.7));
+}
+.text-purple{
+  --tw-text-opacity: 1;
+    color: rgb(192 132 252 / var(--tw-text-opacity, 1));
+}
+.text-indigo{
+  --tw-text-opacity: 1;
+    color: rgb(129 140 248 / var(--tw-text-opacity, 1));
+}
+.text-green{
+  --tw-text-opacity: 1;
+    color: rgb(74 222 128 / var(--tw-text-opacity, 1));
+}
+.text-yellow{
+  --tw-text-opacity: 1;
+    color: rgb(250 204 21 / var(--tw-text-opacity, 1));
+}
+.text-red{
+  --tw-text-opacity: 1;
+    color: rgb(248 113 113 / var(--tw-text-opacity, 1));
+}
+.text-blue{
+  --tw-text-opacity: 1;
+    color: rgb(96 165 250 / var(--tw-text-opacity, 1));
+}
+.text-pink{
+  --tw-text-opacity: 1;
+    color: rgb(244 114 182 / var(--tw-text-opacity, 1));
+}
+.text-orange{
+  --tw-text-opacity: 1;
+    color: rgb(251 146 60 / var(--tw-text-opacity, 1));
+}
+.text-teal {
+    --tw-text-opacity: 1;
+    color: rgb(45 212 191 / var(--tw-text-opacity, 1));
 }
 
 /* Dev stats */
@@ -904,15 +987,19 @@ animation: growBar 1.8s ease-out forwards;
 
 .first-skill-percentage div {
 width: 85%;
+background: violet;
 }
 .second-skill-percentage div {
 width: 80%;
+background: gold;
 }
 .third-skill-percentage div {
 width: 80%;
+background: blue;
 }
 .fourth-skill-percentage div {
 width: 75%;
+background: greenyellow;
 }
 
 @keyframes growBar {
