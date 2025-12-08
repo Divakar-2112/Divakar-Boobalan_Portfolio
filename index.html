@@ -4,210 +4,284 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Divakar Boobalan</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Audiowide&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Saira+Stencil+One&display=swap"
+      rel="stylesheet"
+    />
   </head>
-
   <body id="top">
-     <!-- <div id="particles-container"></div>
-    
-    <div class="floating-shape shape-1"></div>
-    <div class="floating-shape shape-2"></div>
-    <div class="floating-shape shape-3"></div> -->
     <!-- Navbar -->
-     <header>
+    <header>
       <div class="container">
         <div class="header-content">
-           <div class="header-title">
-              <h1>Divakar Boobalan</h1>
-              <p>Full Stack Developer</p>
-            </div>
+          <div class="header-title">
+            <h1>Divakar Boobalan</h1>
+            <p>Full Stack Developer</p>
+          </div>
 
-            <nav class="desktop-nav">
-              <a href="#home" class="nav-link">Home</a>
-              <a href="#about" class="nav-link">About</a>
-              <a href="#projects" class="nav-link">Projects</a>
-              <a href="#skills" class="nav-link">Skills</a>
-              <a href="#experience" class="nav-link">Experience</a>
-              <a href="#contact" class="nav-link">Contact</a>
-            </nav>
+          <nav class="desktop-nav">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#experience" class="nav-link">Experience</a>
+            <a href="#contact" class="nav-link">Contact</a>
+          </nav>
 
-            <button id="menuToggle" class="menu-toggle">
-              <!-- <div class="close-btn" style="visibility:hidden"onclick="closeMobileMenu()">✕</div> -->
-              <span></span>
-              <span></span>
-              <span></span>
-            </button>
-        </div> 
+          <button id="menuToggle" class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
 
         <nav class="mobilemenu" id="mobileMenu">
-          <div class="close-btn" id="closeBtn">✕</div>
-          <a href="#home" class="mobile-nav-link" onclick="closeMobileMenu()">Home</a>
-          <a href="#about" class="mobile-nav-link" onclick="closeMobileMenu()">About</a>
-          <a href="#projects" class="mobile-nav-link" onclick="closeMobileMenu()">Projects</a>
-          <a href="#skills" class="mobile-nav-link" onclick="closeMobileMenu()">Skills</a>
-          <a href="#experience" class="mobile-nav-link" onclick="closeMobileMenu()">Experience</a>
-          <a href="#contact" class="mobile-nav-link" onclick="closeMobileMenu()">Contact</a>
-        </nav>        
+          <div class="close-btn" id="closeBtn">
+            <i class="fa-solid fa-x fa-lg" style="color: #fc0303"></i>
+          </div>
+          <a href="#home" class="mobile-nav-link" onclick="closeMobileMenu()"
+            >Home</a
+          >
+          <a href="#about" class="mobile-nav-link" onclick="closeMobileMenu()"
+            >About</a
+          >
+          <a
+            href="#projects"
+            class="mobile-nav-link"
+            onclick="closeMobileMenu()"
+            >Projects</a
+          >
+          <a href="#skills" class="mobile-nav-link" onclick="closeMobileMenu()"
+            >Skills</a
+          >
+          <a
+            href="#experience"
+            class="mobile-nav-link"
+            onclick="closeMobileMenu()"
+            >Experience</a
+          >
+          <a href="#contact" class="mobile-nav-link" onclick="closeMobileMenu()"
+            >Contact</a
+          >
+        </nav>
       </div>
-     </header>
+    </header>
 
     <!-- Hero Section -->
-     <section id="home" class="hero-section">
+    <section id="home" class="hero-section home-section">
       <div class="container">
         <div class="hero-content">
           <div class="hero-left">
             <h2>Full-Stack Developer</h2>
-            <p>Building engaging web applications with modern technologies and clean, maintainable code.</p>
+            <p>
+              Building engaging web applications with modern technologies and
+              clean, maintainable code.
+            </p>
             <div class="hero-buttons">
               <a href="#projects" class="btn">View Projects</a>
-              <a href="#contact" class="btn">Contact Me</a>
+              <a href="#contact" class="btn btn-secondary">Contact Me</a>
             </div>
           </div>
           <div class="hero-right">
             <div class="hero-img">
               <div class="profile-pic pulse">
-                <img src="https://github.com/Divakar-2112.png" alt="Divakar’s Profile Picture"/>
+                <img
+                  src="https://github.com/Divakar-2112.png"
+                  alt="Divakar’s Profile Picture"
+                />
               </div>
               <div class="profile-text">
-                <p>8+ Projects</p>
+                <a href="#projects"><p>8+ Projects</p></a>
               </div>
             </div>
           </div>
         </div>
       </div>
-     </section>
+    </section>
 
-     <!-- About Section -->
-      <section id="about" class="about-session">
-        <div class="container">
-          <h2 class="about-title">About Me</h2>
-          <div class="about-content">
-            <div class="about-left">
-              <h3>My Journey</h3>
-              <p>Hello! I'm Divakar Boobalan, a Full Stack Developer. Welcome to my portfolio! Here, I showcase my projects, skills, and passion for building web applications. I enjoy turning ideas into dynamic, responsive, and user-friendly websites that provide great user experiences.</p>
-              <pre class="about-code">
-                const developer = {
-                                    name: "Divakar Boobalan",
-                                    role: "Python Developer Intern",
-                                    passion: :Full-Stack Developer",
-                                    focus: "Clean code & user experience"
-                                  };
-              </pre>
-              <p>I believe in continuous learning and staying updated with the latest technologies to deliver the best solutions for modern challenges.</p>
-            </div>
-            <div class="about-right">
-              <h3>Development Philosophy</h3>
-              <div class="philosophy">
-                <div class="philosophy-items">
-                  <div class="philosophy-icons">
-                    <i class="fas fa-code text-purple-400"></i>
-                  </div>
-                  <div class="philosophy-contents">
-                    <h4>Clean Code</h4>
-                   <p>Writing maintainable, well-documented code that follows best practices and standards.</p>
-                  </div>
-                </div>
-                <div class="philosophy-items">
-                  <div class="philosophy-icons">
-                    <i class="fas fa-mobile-alt text-indigo-400"></i>
-                  </div>
-                  <div class="philosophy-contents">
-                    <h4>Responsive Design</h4>
-                    <p>Creating applications that work seamlessly across all devices and screen sizes.</p>
-                  </div>
-                </div>
-                <div class="philosophy-items">
-                  <div class="philosophy-icons">
-                    <i class="fas fa-bolt text-blue-400"></i>
-                  </div>
-                  <div class="philosophy-contents">
-                    <h4>Performance</h4>
-                    <p>Optimizing applications for speed and efficiency to deliver the best user experience.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-<!-- Projects Section -->
-      <section class="project-section" id="projects" >
-        <div class="container">
-          <h2 class="project-title">My Projects</h2>
-          <p class="project-text">Here are some of my recent projects that showcase my skills in full-stack development</p>
-          <div class="project-card-grids">
-            <div class="project-cards">
-              <div class="project-card-title">
-                 <h3>Smart City Web Application</h3>
-                 <span>Completed</span>
-              </div>
-              <p>Developed using Django with HTML, CSS, and JavaScript to create an interactive and user-friendly interface with backend integration.</p>
-              <div class="project-card-tools">
-                  <span class="tech-badge badge-html">HTML</span>
-                  <span class="tech-badge badge-css">CSS</span>
-                  <span class="tech-badge badge-javascript">JavaScript</span>
-                  <span class="tech-badge badge-python">Python</span>
-                  <span class="tech-badge badge-flask">Flask</span>
-                  <span class="tech-badge badge-django">Django</span>
-                  <span class="tech-badge badge-mysql">My SQL</span>
-              </div>
-              <div class="project-card-link">
-                <a href="https://github.com/Divakar-2112/smartCity.git"><i class="fab fa-github"></i> View Project</a>
-              </div>
-            </div>
-            <div class="project-cards">
-              <div class="project-card-title">
-                 <h3>Railway Ticket Booking System</h3>
-                 <span>Completed</span>
-              </div>
-              <p> Created using Flask with a focus on user-friendly interface and secure payment integration.</p>
-              <div class="project-card-tools">
-                  <span class="tech-badge badge-html">HTML</span>
-                  <span class="tech-badge badge-css">CSS</span>
-                  <span class="tech-badge badge-javascript">JavaScript</span>
-                  <span class="tech-badge badge-python">Python</span>
-                  <span class="tech-badge badge-flask">Flask</span>
-                  <span class="tech-badge badge-django">Django</span>
-                  <span class="tech-badge badge-mysql">My SQL</span>
-              </div>
-              <div class="project-card-link">
-                <a href="https://github.com/Divakar-2112/Railway_Ticket_Reservation.git"><i class="fab fa-github"></i> View Project</a>
-              </div>
-            </div>
-            <div class="project-cards">
-              <div class="project-card-title">
-                 <h3>Bank Management System</h3>
-                 <span>In Progress</span>
-              </div>
-              <p>A Flask-based web app for managing banking operations with MySQL for data storage.</p>
-              <div class="project-card-tools">
-                  <span class="tech-badge badge-html">HTML</span>
-                  <span class="tech-badge badge-css">CSS</span>
-                  <span class="tech-badge badge-javascript">JavaScript</span>
-                  <span class="tech-badge badge-python">Python</span>
-                  <span class="tech-badge badge-flask">Flask</span>
-                  <span class="tech-badge badge-django">Django</span>
-                  <span class="tech-badge badge-mysql">My SQL</span>
-              </div>
-              <div class="project-card-link">
-                <a href="https://github.com/Divakar-2112/Bank_Management_with_UI.git"><i class="fab fa-github"></i> View Project</a>
-              </div>
-            </div>
-          </div>
-          <div class="overall-projects-link">
-            <a href="https://github.com/Divakar-2112" class="overall-projects"><i class="fab fa-github"></i> View All Projects</a>
-          </div>
-        </div>
-      </section>
-    <!-- Technical Skills Section -->
-     <section class="skills-section" id="skills">
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <h2 class="about-title">About Me</h2>
       <div class="container">
-        <h2>Technical Skills</h2>
-        <p>I work with a variety of technologies to build modern web applications</p>
+        <div class="about-content">
+          <div class="about-left">
+            <h3 class="about-title">My Journey</h3>
+            <p>
+              Hello! I'm Divakar Boobalan, a Full Stack Developer. Welcome to my
+              portfolio! Here, I showcase my projects, skills, and passion for
+              building web applications. I enjoy turning ideas into dynamic,
+              responsive, and user-friendly websites that provide great user
+              experiences.
+            </p>
+            <div class="about-code">
+              <div class="code">
+                <span class="js-keyword">const</span> <span>developer</span> =
+                {<br />
+                &nbsp;&nbsp;
+                <span class="js-key">name</span>:
+                <span class="js-value">"Divakar Boobalan"</span
+                >,<br />&nbsp;&nbsp; <span class="js-key">role</span>:
+                <span class="js-value">"Python Developer Intern"</span
+                >,<br />&nbsp;&nbsp; <span class="js-key">passion</span>:
+                <span class="js-value">"Full-Stack Developer"</span
+                >,<br />&nbsp;&nbsp; <span class="js-key">focus</span>:
+                <span class="js-value">"Clean code & user experience"</span
+                ><br />&nbsp;&nbsp; };
+              </div>
+            </div>
+            <p>
+              I believe in continuous learning and staying updated with the
+              latest technologies to deliver the best solutions for modern
+              challenges.
+            </p>
+          </div>
+          <div class="about-right">
+            <h3>Development Philosophy</h3>
+            <div class="philosophy">
+              <div class="philosophy-items">
+                <div class="philosophy-icons">
+                  <i class="fas fa-code text-purple-400"></i>
+                </div>
+                <div class="philosophy-contents">
+                  <h4>Clean Code</h4>
+                  <p>
+                    Writing maintainable, well-documented code that follows best
+                    practices and standards.
+                  </p>
+                </div>
+              </div>
+              <div class="philosophy-items">
+                <div class="philosophy-icons">
+                  <i class="fas fa-mobile-alt text-indigo-400"></i>
+                </div>
+                <div class="philosophy-contents">
+                  <h4>Responsive Design</h4>
+                  <p>
+                    Creating applications that work seamlessly across all
+                    devices and screen sizes.
+                  </p>
+                </div>
+              </div>
+              <div class="philosophy-items">
+                <div class="philosophy-icons">
+                  <i class="fas fa-bolt text-blue-400"></i>
+                </div>
+                <div class="philosophy-contents">
+                  <h4>Performance</h4>
+                  <p>
+                    Optimizing applications for speed and efficiency to deliver
+                    the best user experience.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Projects Section -->
+    <section class="project-section" id="projects">
+      <h2 class="project-title">My Projects</h2>
+      <div class="container">
+        <p class="project-text">
+          Here are some of my recent projects that showcase my skills in
+          full-stack development
+        </p>
+        <div class="project-card-grids">
+          <div class="project-cards">
+            <div class="project-card-title">
+              <h3>Smart City Web Application</h3>
+              <span>Completed</span>
+            </div>
+            <p>
+              Developed using Django with HTML, CSS, and JavaScript to create an
+              interactive and user-friendly interface with backend integration.
+            </p>
+            <div class="project-card-tools">
+              <span class="tech-badge badge-html">HTML</span>
+              <span class="tech-badge badge-css">CSS</span>
+              <span class="tech-badge badge-javascript">JavaScript</span>
+              <span class="tech-badge badge-python">Python</span>
+              <span class="tech-badge badge-flask">Flask</span>
+              <span class="tech-badge badge-django">Django</span>
+              <span class="tech-badge badge-mysql">My SQL</span>
+            </div>
+            <div class="project-card-link">
+              <a href="https://github.com/Divakar-2112/smartCity.git"
+                ><i class="fab fa-github"></i> View Project</a
+              >
+            </div>
+          </div>
+          <div class="project-cards">
+            <div class="project-card-title">
+              <h3>Railway Ticket Booking System</h3>
+              <span>Completed</span>
+            </div>
+            <p>
+              Created using Flask with a focus on user-friendly interface and
+              secure payment integration.
+            </p>
+            <div class="project-card-tools">
+              <span class="tech-badge badge-html">HTML</span>
+              <span class="tech-badge badge-css">CSS</span>
+              <span class="tech-badge badge-javascript">JavaScript</span>
+              <span class="tech-badge badge-python">Python</span>
+              <span class="tech-badge badge-flask">Flask</span>
+              <span class="tech-badge badge-django">Django</span>
+              <span class="tech-badge badge-mysql">My SQL</span>
+            </div>
+            <div class="project-card-link">
+              <a
+                href="https://github.com/Divakar-2112/Railway_Ticket_Reservation.git"
+                ><i class="fab fa-github"></i> View Project</a
+              >
+            </div>
+          </div>
+          <div class="project-cards">
+            <div class="project-card-title">
+              <h3>Bank Management System</h3>
+              <span>In Progress</span>
+            </div>
+            <p>
+              A Flask-based web app for managing banking operations with MySQL
+              for data storage.
+            </p>
+            <div class="project-card-tools">
+              <span class="tech-badge badge-html">HTML</span>
+              <span class="tech-badge badge-css">CSS</span>
+              <span class="tech-badge badge-javascript">JavaScript</span>
+              <span class="tech-badge badge-python">Python</span>
+              <span class="tech-badge badge-flask">Flask</span>
+              <span class="tech-badge badge-django">Django</span>
+              <span class="tech-badge badge-mysql">My SQL</span>
+            </div>
+            <div class="project-card-link">
+              <a
+                href="https://github.com/Divakar-2112/Bank_Management_with_UI.git"
+                ><i class="fab fa-github"></i> View Project</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="overall-projects-link">
+          <a href="https://github.com/Divakar-2112" class="overall-projects"
+            ><i class="fab fa-github"></i> View All Projects</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- Technical Skills Section -->
+    <section class="skills-section" id="skills">
+      <h2 class="skill-title">Technical Skills</h2>
+      <div class="container">
+        <p>
+          I work with a variety of technologies to build modern web applications
+        </p>
         <div class="technical-skills">
           <div class="skill-items">
             <div class="tech-icon html"><i class="fab fa-html5"></i></div>
@@ -235,8 +309,62 @@
           </div>
           <div class="skill-items">
             <div class="tech-icon django">
-            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 48 48"><path fill="#fff" fill-rule="evenodd" d="M8,16v12.646C6.655,28.9,5.949,29,4.878,29 C1.67,28.997,0,27.565,0,24.816c0-2.649,1.771-4.368,4.516-4.368c0.426,0,0.75,0.033,1.143,0.134V16H8z M5.659,22.672 c-0.308-0.1-0.561-0.134-0.886-0.134c-1.328,0-2.096,0.809-2.096,2.228c0,1.381,0.734,2.143,2.079,2.143 c0.291,0,0.527-0.016,0.903-0.067V22.672L5.659,22.672z" clip-rule="evenodd"></path><path fill="#fff" fill-rule="evenodd" d="M12,20.046v6.618c0,2.076-0.155,3.224-0.612,4.084 c-0.426,0.827-0.987,1.349-2.146,1.925l-2.437-1.149c1.159-0.539,1.721-1.015,2.079-1.742c0.375-0.743,0.494-1.754,0.494-4.017 v-5.721H12z" clip-rule="evenodd"></path><rect width="2.623" height="2.713" x="9.377" y="16" fill="#fff" fill-rule="evenodd" clip-rule="evenodd"></rect><path fill="#fff" fill-rule="evenodd" d="M13.734,20.876c1.136-0.552,2.223-0.795,3.408-0.795 c1.321,0,2.189,0.363,2.573,1.073C19.93,21.551,20,22.068,20,23.175v5.407c-1.152,0.171-2.606,0.294-3.673,0.294 c-2.156,0-3.123-0.778-3.123-2.505c0-1.868,1.285-2.731,4.441-3.006V22.78c0-0.483-0.235-0.658-0.884-0.658 c-0.95,0-2.02,0.278-3.024,0.812L13.734,20.876z M17.761,25.107c-1.702,0.171-2.255,0.449-2.255,1.141 c0,0.518,0.318,0.761,1.02,0.761c0.384,0,0.735-0.034,1.235-0.12L17.761,25.107L17.761,25.107z" clip-rule="evenodd"></path><path fill="#fff" fill-rule="evenodd" d="M21.418,20.693c1.52-0.421,2.772-0.613,4.041-0.613 c1.318,0,2.273,0.317,2.839,0.93C28.83,21.588,29,22.222,29,23.573v5.303h-2.574v-5.195c0-1.038-0.335-1.424-1.252-1.424 c-0.351,0-0.669,0.035-1.186,0.195v6.425h-2.57V20.693z" clip-rule="evenodd"></path><path fill="#fff" fill-rule="evenodd" d="M30.177,30.006c0.919,0.486,1.839,0.71,2.812,0.71 c1.721,0,2.454-0.473,2.454-2.176v-0.052c-0.51,0.258-1.025,0.366-1.704,0.366c-2.302,0-3.739-1.547-3.739-3.997 c0-3.043,2.141-4.762,5.974-4.762c1.126,0,2.167,0.121,3.427,0.383l-0.899,1.93c-0.699-0.138-0.057-0.021-0.584-0.072v0.279 l0.034,1.13l0.017,1.461c0.017,0.366,0.017,0.73,0.034,1.096v0.73c0,2.295-0.19,3.131-0.751,4.02 c-0.818,1.302-2.234,1.947-4.246,1.947c-1.024,0-1.91-0.155-2.829-0.521V30.006L30.177,30.006z M35.392,22.251h-0.085h-0.19 c-0.51-0.017-1.108,0.121-1.518,0.383c-0.628,0.365-0.953,1.027-0.953,1.964c0,1.337,0.649,2.102,1.808,2.102 c0.358,0,0.649-0.069,0.987-0.172v-0.193v-0.73c0-0.314-0.017-0.662-0.017-1.027l-0.017-1.234l-0.017-0.886V22.251z" clip-rule="evenodd"></path><path fill="#fff" fill-rule="evenodd" d="M43.566,20.046c2.753,0,4.434,1.66,4.434,4.348 c0,2.756-1.752,4.483-4.544,4.483c-2.756,0-4.456-1.659-4.456-4.33C39.005,21.774,40.757,20.046,43.566,20.046z M43.509,26.752 c1.057,0,1.681-0.838,1.681-2.294c0-1.439-0.607-2.294-1.663-2.294c-1.093,0-1.718,0.838-1.718,2.294 C41.81,25.914,42.438,26.752,43.509,26.752L43.509,26.752z" clip-rule="evenodd"></path></svg></div>
-            <h3>Django</h3>            
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="50"
+                height="50"
+                viewBox="0 0 48 48"
+              >
+                <path
+                  fill="#fff"
+                  fill-rule="evenodd"
+                  d="M8,16v12.646C6.655,28.9,5.949,29,4.878,29 C1.67,28.997,0,27.565,0,24.816c0-2.649,1.771-4.368,4.516-4.368c0.426,0,0.75,0.033,1.143,0.134V16H8z M5.659,22.672 c-0.308-0.1-0.561-0.134-0.886-0.134c-1.328,0-2.096,0.809-2.096,2.228c0,1.381,0.734,2.143,2.079,2.143 c0.291,0,0.527-0.016,0.903-0.067V22.672L5.659,22.672z"
+                  clip-rule="evenodd"
+                ></path>
+                <path
+                  fill="#fff"
+                  fill-rule="evenodd"
+                  d="M12,20.046v6.618c0,2.076-0.155,3.224-0.612,4.084 c-0.426,0.827-0.987,1.349-2.146,1.925l-2.437-1.149c1.159-0.539,1.721-1.015,2.079-1.742c0.375-0.743,0.494-1.754,0.494-4.017 v-5.721H12z"
+                  clip-rule="evenodd"
+                ></path>
+                <rect
+                  width="2.623"
+                  height="2.713"
+                  x="9.377"
+                  y="16"
+                  fill="#fff"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                ></rect>
+                <path
+                  fill="#fff"
+                  fill-rule="evenodd"
+                  d="M13.734,20.876c1.136-0.552,2.223-0.795,3.408-0.795 c1.321,0,2.189,0.363,2.573,1.073C19.93,21.551,20,22.068,20,23.175v5.407c-1.152,0.171-2.606,0.294-3.673,0.294 c-2.156,0-3.123-0.778-3.123-2.505c0-1.868,1.285-2.731,4.441-3.006V22.78c0-0.483-0.235-0.658-0.884-0.658 c-0.95,0-2.02,0.278-3.024,0.812L13.734,20.876z M17.761,25.107c-1.702,0.171-2.255,0.449-2.255,1.141 c0,0.518,0.318,0.761,1.02,0.761c0.384,0,0.735-0.034,1.235-0.12L17.761,25.107L17.761,25.107z"
+                  clip-rule="evenodd"
+                ></path>
+                <path
+                  fill="#fff"
+                  fill-rule="evenodd"
+                  d="M21.418,20.693c1.52-0.421,2.772-0.613,4.041-0.613 c1.318,0,2.273,0.317,2.839,0.93C28.83,21.588,29,22.222,29,23.573v5.303h-2.574v-5.195c0-1.038-0.335-1.424-1.252-1.424 c-0.351,0-0.669,0.035-1.186,0.195v6.425h-2.57V20.693z"
+                  clip-rule="evenodd"
+                ></path>
+                <path
+                  fill="#fff"
+                  fill-rule="evenodd"
+                  d="M30.177,30.006c0.919,0.486,1.839,0.71,2.812,0.71 c1.721,0,2.454-0.473,2.454-2.176v-0.052c-0.51,0.258-1.025,0.366-1.704,0.366c-2.302,0-3.739-1.547-3.739-3.997 c0-3.043,2.141-4.762,5.974-4.762c1.126,0,2.167,0.121,3.427,0.383l-0.899,1.93c-0.699-0.138-0.057-0.021-0.584-0.072v0.279 l0.034,1.13l0.017,1.461c0.017,0.366,0.017,0.73,0.034,1.096v0.73c0,2.295-0.19,3.131-0.751,4.02 c-0.818,1.302-2.234,1.947-4.246,1.947c-1.024,0-1.91-0.155-2.829-0.521V30.006L30.177,30.006z M35.392,22.251h-0.085h-0.19 c-0.51-0.017-1.108,0.121-1.518,0.383c-0.628,0.365-0.953,1.027-0.953,1.964c0,1.337,0.649,2.102,1.808,2.102 c0.358,0,0.649-0.069,0.987-0.172v-0.193v-0.73c0-0.314-0.017-0.662-0.017-1.027l-0.017-1.234l-0.017-0.886V22.251z"
+                  clip-rule="evenodd"
+                ></path>
+                <path
+                  fill="#fff"
+                  fill-rule="evenodd"
+                  d="M43.566,20.046c2.753,0,4.434,1.66,4.434,4.348 c0,2.756-1.752,4.483-4.544,4.483c-2.756,0-4.456-1.659-4.456-4.33C39.005,21.774,40.757,20.046,43.566,20.046z M43.509,26.752 c1.057,0,1.681-0.838,1.681-2.294c0-1.439-0.607-2.294-1.663-2.294c-1.093,0-1.718,0.838-1.718,2.294 C41.81,25.914,42.438,26.752,43.509,26.752L43.509,26.752z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </div>
+            <h3>Django</h3>
           </div>
           <div class="skill-items">
             <div class="tech-icon tailwind"><i class="fas fa-palette"></i></div>
@@ -247,29 +375,43 @@
             <h3>MongoDB</h3>
           </div>
           <div class="skill-items">
-            <div class="tech-icon wordpress"><i class="fab fa-wordpress"></i></div>
+            <div class="tech-icon wordpress">
+              <i class="fab fa-wordpress"></i>
+            </div>
             <h3>WordPress</h3>
           </div>
         </div>
+        <h2 class="skill-title">Additional Skills</h2>
         <div class="other-skills">
           <div class="skills-left">
-            <h3>Additional Skills</h3>
             <div class="first-skill">
               <h4>Soft Skills</h4>
               <div class="soft-skill-items">
-                <span class="achivement-badge text-purple"><i class="fas fa-comments mr-2"></i>Communication</span>
-                <span class="achivement-badge text-indigo"><i class="fas fa-users mr-2"></i>TeamWork</span>
-                <span class="achivement-badge text-green"><i class="fas fa-lightbulb mr-2"></i>Problem Solving</span>
-                <span class="achivement-badge text-yellow"><i class="fas fa-tasks mr-2"></i>Project Management</span>
+                <span class="achivement-badge text-purple"
+                  ><i class="fas fa-comments mr-2"></i>Communication</span
+                >
+                <span class="achivement-badge text-indigo"
+                  ><i class="fas fa-users mr-2"></i>TeamWork</span
+                >
+                <span class="achivement-badge text-green"
+                  ><i class="fas fa-lightbulb mr-2"></i>Problem Solving</span
+                >
+                <span class="achivement-badge text-yellow"
+                  ><i class="fas fa-tasks mr-2"></i>Project Management</span
+                >
               </div>
             </div>
             <div class="second-skill">
               <h4>Languages</h4>
               <div class="second-skill-items">
                 <div class="soft-skill-items">
-                  <span class="achivement-badge text-red"><i class="fas fa-language mr-2"></i>Tamil</span>
-                  <span class="achivement-badge text-blue"><i class="fas fa-language mr-2"></i>English</span>
-                </div>                
+                  <span class="achivement-badge text-red"
+                    ><i class="fas fa-language mr-2"></i>Tamil</span
+                  >
+                  <span class="achivement-badge text-blue"
+                    ><i class="fas fa-language mr-2"></i>English</span
+                  >
+                </div>
               </div>
             </div>
             <div class="third-skill">
@@ -326,24 +468,46 @@
           </div>
         </div>
       </div>
-     </section>
+    </section>
     <!-- Experience & Education Section -->
-     <section class="experience" id="experience">
+    <section class="experience" id="experience">
+      <h2 class="experience-title">Experience & Education</h2>
       <div class="container">
-        <h2>Experience & Education</h2>
         <div class="experience-content">
           <div class="experiences">
             <h3>Professional Experience</h3>
             <div class="timeline">
               <div class="timeline-items">
-                <h4><i class="fas fa-laptop-code"></i> Full-Stack Developer Trainee</h4>
+                <a
+                  href="assets/images/DCKAP-Experience-Letter.pdf"
+                  target="_blank"
+                  ><h4>
+                    <i class="fas fa-laptop-code"></i> Full-Stack Developer
+                    Trainee
+                  </h4></a
+                >
                 <p>DCKAP Palli-1-year Training Program</p>
-                <p>Completed intensive training focused on modern web development technologies</p>
+                <p>
+                  Completed intensive training focused on modern web development
+                  technologies
+                </p>
                 <ul>
-                  <li>Developed full-stack web applications from scratch using Python/Flask/Django.</li>
-                  <li>Gained hands-on coding experience through real-time projects under industry mentors.</li>
-                  <li>Practiced best coding standards, version control, and debugging techniques.</li>
-                  <li>Worked on both frontend and backend development for various projects.</li>
+                  <li>
+                    Developed full-stack web applications from scratch using
+                    Python/Flask/Django.
+                  </li>
+                  <li>
+                    Gained hands-on coding experience through real-time projects
+                    under industry mentors.
+                  </li>
+                  <li>
+                    Practiced best coding standards, version control, and
+                    debugging techniques.
+                  </li>
+                  <li>
+                    Worked on both frontend and backend development for various
+                    projects.
+                  </li>
                 </ul>
               </div>
             </div>
@@ -351,12 +515,24 @@
               <div class="timeline-items">
                 <h4><i class="fas fa-tools"></i> Water Purifier Engineer</h4>
                 <p>LG Electronics India Pvt Ltd</p>
-                <p>Handled installation, maintenance, and troubleshooting of water purifiers</p>
+                <p>
+                  Handled installation, maintenance, and troubleshooting of
+                  water purifiers
+                </p>
                 <ul>
-                  <li>Performed regular service and quality checks on customer premises.</li>
+                  <li>
+                    Performed regular service and quality checks on customer
+                    premises.
+                  </li>
                   <li>Diagnosed and resolved technical issues efficiently.</li>
-                  <li>Provided customer support and ensured high service satisfaction.</li>
-                  <li>Maintained service reports and handled on-field technical operations.</li>
+                  <li>
+                    Provided customer support and ensured high service
+                    satisfaction.
+                  </li>
+                  <li>
+                    Maintained service reports and handled on-field technical
+                    operations.
+                  </li>
                 </ul>
               </div>
             </div>
@@ -365,10 +541,17 @@
             <h3>Education</h3>
             <div class="timeline">
               <div class="timeline-items">
-                <h4><i class="fas fa-graduation-cap"></i> Diploma in Electronics and Communication Engineering</h4>
+                <h4>
+                  <i class="fas fa-graduation-cap"></i> Diploma in Electronics
+                  and Communication Engineering
+                </h4>
                 <p>Central Polytechnic College</p>
                 <p>2016-2021,Taramani</p>
-                <p>Completed diploma in Electronics and Communication Engineering with a strong foundation in electronic circuits, communication systems, and technical problem-solving.</p>
+                <p>
+                  Completed diploma in Electronics and Communication Engineering
+                  with a strong foundation in electronic circuits, communication
+                  systems, and technical problem-solving.
+                </p>
               </div>
             </div>
             <div class="timeline">
@@ -376,26 +559,43 @@
                 <h4><i class="fas fa-graduation-cap"></i> Higher Secondary</h4>
                 <p>Nehru Government Boys Higher Secondary School</p>
                 <p>2012-2016,Nanganallur</p>
-                <p>Completed Higher Secondary education with a focus on Mathematics, building a strong academic foundation for future technical studies.</p>
+                <p>
+                  Completed Higher Secondary education with a focus on
+                  Mathematics, building a strong academic foundation for future
+                  technical studies.
+                </p>
               </div>
             </div>
             <div class="aim">
               <h4>My Mission</h4>
-              <p>My mission is to learn, grow, and build useful digital solutions using the skills I develop along the way. I want to turn ideas into simple and functional applications, improve my coding abilities every day, and collaborate with others to create meaningful projects.</p>
+              <p>
+                My mission is to learn, grow, and build useful digital solutions
+                using the skills I develop along the way. I want to turn ideas
+                into simple and functional applications, improve my coding
+                abilities every day, and collaborate with others to create
+                meaningful projects.
+              </p>
             </div>
           </div>
         </div>
       </div>
-     </section> 
+    </section>
     <!-- Contact Section -->
-     <section class="contact-session" id="contact">
+    <section class="contact-section" id="contact">
+      <h2 class="contact-title">Let's Connect</h2>
       <div class="container">
-        <h2>Let's Connect</h2>
-        <p>Interested in collaborating on a project or discussing opportunities? Feel free to reach out!</p>
+        <p>
+          Interested in collaborating on a project or discussing opportunities?
+          Feel free to reach out!
+        </p>
         <div class="contact-content">
           <div class="contact-send">
             <h2>Contact Form</h2>
-            <form action="https://docs.google.com/forms/d/e/1FAIpQLScpEFB7SwlBHW00acSmiHlQ-bCC_dcayTpEt0iKawyI2ESJ3A/formResponse" method="POST" target="_blank">
+            <form
+              action="https://docs.google.com/forms/d/e/1FAIpQLScpEFB7SwlBHW00acSmiHlQ-bCC_dcayTpEt0iKawyI2ESJ3A/formResponse"
+              method="POST"
+              target="_blank"
+            >
               <label for="name">Name:</label>
               <input type="text" id="name" name="entry.111111" required />
 
@@ -403,112 +603,154 @@
               <input type="email" id="email" name="entry.222222" required />
 
               <label for="message">Message:</label>
-              <textarea id="message" name="entry.333333" rows="4" required></textarea>
+              <textarea
+                id="message"
+                name="entry.333333"
+                rows="4"
+                required
+              ></textarea>
 
               <input type="submit" value="Submit" />
             </form>
           </div>
           <div class="contact-info">
             <div class="contact-card">
-              <i class="fas fa-envelope" style="color:#EA4335; font-size:30px;"></i>
+              <i
+                class="fas fa-envelope"
+                style="color: #ea4335; font-size: 30px"
+              ></i>
               <h3>Email</h3>
               <a href="mailto:divakarb5087@gmail.com">divakarb5087@gmail.com</a>
             </div>
             <div class="contact-card">
-              <i class="fab fa-github" style="color:#171515; font-size:30px;"></i>
+              <i
+                class="fab fa-github"
+                style="color: #171515; font-size: 30px"
+              ></i>
               <h3>GitHub</h3>
               <a href="https://github.com/Divakar-2112">GitHub Profile</a>
             </div>
             <div class="contact-card">
-              <i class="fab fa-linkedin" style="color:#0077B5; font-size:30px;"></i>
+              <i
+                class="fab fa-linkedin"
+                style="color: #0077b5; font-size: 30px"
+              ></i>
               <h3>LinkedIn</h3>
-              <a href="https://www.linkedin.com/in/divakar-boobalan-0b536a21b">LinkedIn Profile</a>
+              <a href="https://www.linkedin.com/in/divakar-boobalan-0b536a21b"
+                >LinkedIn Profile</a
+              >
             </div>
             <div class="contact-card">
-              <i class="fas fa-map-marker-alt" style="color:#FF5722; font-size:30px;"></i>
+              <i
+                class="fas fa-map-marker-alt"
+                style="color: #ff5722; font-size: 30px"
+              ></i>
               <h3>Location</h3>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d378.6601729843968!2d80.19494779584102!3d12.981411754841742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525dfbc3f5e441%3A0x3ab11db266db7d79!2sGuru%20Cafeteria!5e0!3m2!1sen!2sin!4v1764472903190!5m2!1sen!2sin" width="80" height="80" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d378.6601729843968!2d80.19494779584102!3d12.981411754841742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525dfbc3f5e441%3A0x3ab11db266db7d79!2sGuru%20Cafeteria!5e0!3m2!1sen!2sin!4v1764472903190!5m2!1sen!2sin"
+                width="80"
+                height="80"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
             <div class="contact-card">
-              <i class="fab fa-twitter" style="color:#1DA1F2; font-size:30px;"></i>
+              <i
+                class="fab fa-twitter"
+                style="color: #1da1f2; font-size: 30px"
+              ></i>
               <h3>Twitter</h3>
               <a href="#">Twitter Profile</a>
             </div>
             <div class="contact-card">
-              <i class="fab fa-whatsapp" style="color:#25D366; font-size:30px;"></i>
+              <i
+                class="fab fa-whatsapp"
+                style="color: #25d366; font-size: 30px"
+              ></i>
               <h3>Whatsapp</h3>
               <a href="tel:+919940025087">Whatsapp</a>
             </div>
           </div>
         </div>
       </div>
-     </section>
+    </section>
     <!-- Footer -->
 
     <footer>
       <div class="footer-about">
-          <div class="footer-name">
-            <h2>Divakar Boobalan</h2>
-            <p>Full Stack Developer</p>
-          </div>
-          <div class="footer-social-icons">
-            <a href="https://www.linkedin.com/in/divakar-boobalan-0b536a21b"
-              ><i class="fab fa-linkedin"></i
-            ></a>
-            <a href="https://github.com/Divakar-2112"
-              ><i class="fab fa-github"></i
-            ></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-          </div>
+        <div class="footer-name">
+          <h2>Divakar Boobalan</h2>
+          <p>Full Stack Developer</p>
         </div>
+        <div class="footer-social-icons">
+          <a href="https://www.linkedin.com/in/divakar-boobalan-0b536a21b"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/Divakar-2112"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
       <div class="container">
         <p>&copy; 2025 Divakar Boobalan. All rights reserved.</p>
-        <p>Designed and built with <i class="fas fa-heart" style="color: #FF5722; font-size:large"></i> and code</p>
+        <p>
+          Designed and built with
+          <span class="footer-heart"
+            ><i
+              class="fas fa-heart"
+              style="color: #ff5722; font-size: large"
+            ></i
+          ></span>
+          and code
+        </p>
       </div>
     </footer>
 
-    <button id="backtotop"><a href="#top"><i class="fas fa-arrow-up"></i></a></button>
+    <a href="#top"
+      ><button id="backtotop"><i class="fas fa-arrow-up"></i></button
+    ></a>
     <script>
-      const menuToggle = document.getElementById('menuToggle');
-      const mobileMenu = document.getElementById('mobileMenu');
-      const closeBtn = document.getElementById('closeBtn');
-      const mobileLinks = document.querySelectorAll('.mobile-link');
+      const menuToggle = document.getElementById("menuToggle");
+      const mobileMenu = document.getElementById("mobileMenu");
+      const closeBtn = document.getElementById("closeBtn");
+      const mobileLinks = document.querySelectorAll(".mobile-nav-link");
 
       // Toggle mobile menu
-      menuToggle.addEventListener('click', () => {
-        mobileMenu.classList.toggle('active');
+      menuToggle.addEventListener("click", () => {
+        mobileMenu.classList.toggle("active");
       });
 
       // Close button click
-      closeBtn.addEventListener('click', () => {
-        mobileMenu.classList.remove('active');
+      closeBtn.addEventListener("click", () => {
+        mobileMenu.classList.remove("active");
       });
 
       // Close menu when any mobile link is clicked
-      mobileLinks.forEach(link => {
-        link.addEventListener('click', () => {
-          mobileMenu.classList.remove('active');
+      mobileLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.remove("active");
         });
       });
       // Automatically close mobile menu when resizing to desktop
-      window.addEventListener('resize', () => {
+      window.addEventListener("resize", () => {
         if (window.innerWidth > 768) {
-          mobileMenu.classList.remove('active');
+          mobileMenu.classList.remove("active");
         }
       });
 
       // Show button after scrolling down 200px
-      const backToTopButton = document.getElementById('backtotop');
+      const backToTopButton = document.getElementById("backtotop");
 
-      window.addEventListener('scroll', () => {
+      window.addEventListener("scroll", () => {
         if (window.scrollY > 200) {
-          backToTopButton.style.display = 'flex';
+          backToTopButton.style.display = "flex";
         } else {
-          backToTopButton.style.display = 'none';
+          backToTopButton.style.display = "none";
         }
       });
-
-      
     </script>
   </body>
 </html>
